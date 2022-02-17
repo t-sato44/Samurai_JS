@@ -104,6 +104,9 @@
             
              // キーイベント＆入力判定処理
             const keyDown = e => {
+                //背景のデフォルト知を設定する
+               wrap.style.backgroundColor = '#666';
+
                 if(e.key === checkTexts[0].textContent) {
                     checkTexts[0].className = 'add-color';
 
